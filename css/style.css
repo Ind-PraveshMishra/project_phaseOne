@@ -1,1 +1,40 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
+
+.bodybackground{
+    width: 100%;
+    height: 926px;
+    background-color: #58B99D;
+}
+
+.bodyText {
+    margin-top: 80px !important;
+    width: 100%;
+    margin-right: 0%;
+}
+
+aside{
+    border: solid red 1px;
+}
+.mainText{
+    margin-top: 20px;
+}
+.title{
+    z-index: 10;
+    width: 400px;
+    top: 180px;
+    text-transform: uppercase;
+}
+.titleDetail{
+    z-index: 10;
+    top: 250px;
+    width: 350px;
+}
+.imgHeader{
+    width: 100%;
+    margin-right: 0%;
+    background-repeat: repeat;
+}
+
+.cardSetting{
+    margin-top: 20px !important;
+}
