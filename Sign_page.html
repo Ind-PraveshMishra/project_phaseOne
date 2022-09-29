@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- navbar start -->
+        <nav class="navbar bg-light container-fluid fixed-top shadow p-3 mb-5 bg-body rounded">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding-left:30px;">Blog</a>
+            <!-- <button class="btn btn-outline-primary" id="sign"><a href="Sign_page.html"> Sign In</a></button> -->
+            </div>
+        </nav>
+    <!-- navbar end -->
+
+    <!-- sign in div start -->
+        <div class="container logintext">
+            <div class="row loginrow justify-content-center">
+                <form action="index.html" method="get" class="d-flex flex-column formtext">
+                    <label for="Email" style="padding: 5px 6px;">Email</label>
+                    <input type="text" placeholder="Enter Email" id="username" name="Email" style="border: 0.5px solid;border-radius: 12px;
+                    padding: 5px;">
+
+                    <label for="Password" style="margin-top: 10px;padding: 5px 6px;">Password</label>
+                    <input type="password" placeholder="Enter Password" id="pswd" name="Password" style="border: 0.5px solid;border-radius: 9px;
+                    padding: 5px;"><br>
+
+                    <button class="btn btn-primary" onclick=login()>Login</button>
+                    <a href="#" class="forgetbtn"> Forget Password!</a>
+                    <p id="pasteuser"></p>
+                </form>
+            </div>
+        </div>
+
+<!-- sign in div end -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        function login(){
+            let user = document.getElementById("username").value;
+            let password = document.getElementById("pswd").value;
+            if((user == null || user != "") && (password == null || password != "")){
+                sessionStorage.setItem("username", user);
+                let data =sessionStorage.getItem("username");
+                document.getElementById("pasteuser").innerHTML=user;
+            }
+            else{
+                alert("Enter email and password")
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

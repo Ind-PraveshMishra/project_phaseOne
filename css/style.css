@@ -41,3 +41,26 @@ aside{
 .banner{
     width: fit-content;
 }
+
+/* style for login page start */
+
+.logintext{
+    width: 25% !important;
+    margin-top: 151px;
+    /* border: solid grey 1px; */
+    border-radius: 10px;
+    height: 321px;
+    box-shadow: -1px 7px 28px 11px #80808054;
+}
+.formtext{
+    /* width: 25% !important; */
+}
+.loginrow{
+    padding: 20px;
+    /* width: 25%; */
+}
+.forgetbtn{
+    /* content: center; */
+    margin-left: 60%;
+    font-size: small;
+}
